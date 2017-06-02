@@ -1,0 +1,48 @@
+$shadow_height:100px;
+$base_color:#d39aff;
+$dark_base_color:#ba6df6;
+
+.user_info_ul{
+    width:100%;
+    height:120px;
+    background:$base_color;
+    list-style: none;
+    bottom:0;
+    left:0;
+    text-indent: 0;
+    padding:0;
+    position: relative;
+    border-bottom:1px solid #f2f2f2;
+    li{
+        position: relative;
+        padding:5px 15px;
+        color:#fff;
+    }
+    li[name="user_name"] {
+        top:45px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    li[name="user_email"]{
+        top:35px;
+        font-size:15px;
+        font-weight: lighter;
+    }
+}
+
+.sidebar_add_bt{
+    width: 100%;
+    margin: 0 auto;
+    padding:5px 15px;
+    position: relative;
+    text-align: center;
+}
+.sidebar_badge{
+    position: absolute;
+    right:20px;
+    top:15px;
+}
+
+.icon-button{
+    cursor: pointer;
+}

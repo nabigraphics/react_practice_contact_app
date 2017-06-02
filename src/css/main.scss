@@ -1,0 +1,609 @@
+$shadow_height:100px;
+$footer_height:15px;
+$base_color:#d39aff;
+$dark_base_color:#ba6df6;
+$cardboard_sub_color:#9c9c9c;
+$cardboard_sub_color2:#6b6b6b;
+.main{
+  /*background:#de3590;*/
+  background:$base_color;
+  position: fixed;
+  z-index: 10;
+  width:100%;
+  height:$shadow_height;
+  padding:15px;
+  box-sizing: border-box;
+  #header{
+    .title{
+      text-decoration: none;
+    }
+    .menu_icon{
+      color:#fff;
+    }
+    margin:0 auto;
+    width:250px;
+    h1{
+      font-size:18px;
+      font-weight: normal;
+      text-align: center;
+      color:#F4FEFF;
+      top:0px;
+      left:0;
+      margin:0px 0px 15px 0px;
+      padding:0;
+      position: relative;
+    }
+    h3{
+      font-size:14px;
+      text-align: center;
+      font-weight: lighter;
+      color:#F4FEFF;
+      top:0;
+      left:0;
+      margin:0;
+      padding:0;
+      position: relative;
+    }
+  }
+
+  select {
+   width: 60px;
+   color: #252525;
+   background: #fff;
+   font-weight: bold;
+   outline: 0;
+   border: 0;
+   border-radius: 5px;  
+   text-align: center !important;
+   text-align-last: center !important;
+   box-sizing: border-box;
+   padding: 10px 12px;
+   font-size: 14px;
+   float:left;
+   top:0;
+   cursor:pointer;
+  }
+  .search{
+    position: relative;
+    outline:0;
+    top:0px;
+    max-width:500px;
+    height:auto;
+    margin:5px auto;
+    border-radius: 5px;
+    background:transperant;
+    text-align:center !important;
+    padding:0px;
+    box-sizing: border-box;
+  }
+}
+/*
+input[name="search"]{
+  border-radius: 5px;
+  border:0;
+  outline: 0;
+  background-color:#F4FEFF;
+  color:#252525;
+  font-weight: bold;
+  padding:0;
+  height:41px;
+  font-size:14px;
+  text-align: center !important;
+  width:calc(100% - 60px);
+  margin:0;
+  box-sizing: border-box;
+}
+*/
+.shadow{
+  list-style: none;
+  position: relative;
+  height:$shadow_height;
+  margin:auto;
+  width:100%;
+  max-width:758px;
+  padding:15px;
+  box-sizing: border-box;
+}
+.footer{
+  list-style: none;
+  position: relative;
+  height:$footer_height;
+  margin:auto;
+  width:100%;
+  max-width:758px;
+  padding:15px;
+  box-sizing: border-box;
+}
+.justify-content-between{
+  margin:0px 5px 0px 5px;
+}
+.main_group_status{
+  margin:5px 5px 0px 5px;
+  color:#252525;
+  border:1px solid #cccdce;
+  background:#fff;
+  cursor: pointer;
+}
+.sidebar_group_list{
+  margin:5px 5px 0px 5px;
+
+}
+.group_status{
+  margin:5px 5px 0px 5px;
+  cursor: pointer;
+}
+.profile_card{
+  cursor: pointer;
+  border:0;
+  outline:0;
+  background:#fff;
+  margin:15px !important;
+  border-radius:.25rem !important;
+  box-shadow: 0 2px 2px rgba(#000,0.15);
+  .opend{
+    border:0;
+    outline:0;
+  }
+  .cd_block{
+    padding:0;
+  }
+  .cd_profile_name{
+    float:left;
+    color:#353535;
+    text-align:left;
+    font-size:28px;
+    font-weight:600;
+    position:absolute;
+    top:35px;
+    left:130px;
+  }
+  .cd_profile_category{
+    text-align: left;
+    float:left;
+    font-size:13px;
+    color:$cardboard_sub_color2;
+    font-weight: 500;
+    position: absolute;
+    top:25px;
+    left:130px;
+  }
+  .cd_profile_phone{
+    float:right;
+    color:$cardboard_sub_color;
+    text-align: right;
+    font-size:13px;
+    position: absolute;
+    top:70px;
+    left:130px;
+  }
+  .cd_profile_business_call{
+    left:130px;
+  }
+  .cd_profile_business{
+    left:130px;
+  }
+  .cd_profile_email{
+    float:right;
+    color:$cardboard_sub_color;
+    text-align: right;
+    font-size:13px;
+    position: absolute;
+    top:90px;
+    left:130px;
+  }
+  .cd_profile_address{
+    left:130px;
+  }
+  .cd_profile_image{
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+    margin:15px;
+  }
+}
+
+/* Profile Card Design */
+
+/*
+.profile_card-active{
+  -webkit-transition: all 250ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+   -moz-transition: all 250ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+     -o-transition: all 250ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+        transition: all 250ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  cursor: pointer;
+  border:0;
+  outline:0;
+  background:#ffffff;
+  margin:15px !important;
+  box-sizing: border-box;
+  box-shadow: 0 5px 10px rgba(#000,0.20);
+  .cd_block{
+    padding:0;
+  }
+  .cd_profile_name{
+    float:left;
+    color:#353535;
+    text-align:left;
+    font-size:28px;
+    font-weight:600;
+    position:absolute;
+    top:35px;
+    left:130px;
+  }
+  .cd_profile_category{
+    text-align: left;
+    float:left;
+    font-size:13px;
+    color:$cardboard_sub_color2;
+    font-weight: 500;
+    position: absolute;
+    top:25px;
+    left:130px;
+  }
+  .cd_profile_phone{
+    float:right;
+    color:$cardboard_sub_color;
+    text-align: right;
+    font-size:13px;
+    position: absolute;
+    top:70px;
+    left:130px;
+  }
+  .cd_profile_business_call{
+    left:130px;
+  }
+  .cd_profile_business{
+    left:130px;
+  }
+  .cd_profile_email{
+    float:right;
+    color:$cardboard_sub_color;
+    text-align: right;
+    font-size:13px;
+    position: absolute;
+    top:90px;
+    left:130px;
+  }
+  .cd_profile_address{
+    left:130px;
+  }
+  .cd_profile_image{
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+    margin:15px;
+  }
+}
+*/
+///////////////////////
+
+.cardedit{
+  padding:0;
+  list-style: none;
+  display: inline-block;
+  position: absolute;
+  top:7.5px;
+  right:7.5px;
+  font-size:16px;
+  border-top-left-radius: .25rem;
+  li{
+    display: inline-block;
+    padding:2px 12px;
+    margin:0px 2px;
+    cursor: pointer;
+    color:#252525;
+    border:1px solid rgba(#ff6074,0.15);
+    border-radius: 100px;
+
+  }
+  .first {
+    /*border-top-left-radius: .20rem;*/
+  }
+  .last{
+    /*border-bottom-right-radius:.20rem;*/
+  }
+
+}
+
+.testcol{
+  text-align: center;
+}
+.Prompt_form{
+  position: fixed;
+  width:100%;
+  height:100%;
+  z-index: 16;
+  background:rgba(#000,0.35);
+  overflow:hidden;
+  text-align: center;
+  .parent{
+    margin:25px;
+    width:auto;
+    box-sizing: border-box;
+    background:#fff;
+    color:#252525;
+    border-radius:5px;
+    padding: 20px;
+    position: relative;
+    top: 50%;
+    overflow: auto;
+    box-shadow:0px 5px 10px rgba(0,0,0,0.25);
+    .prompt_bt{
+      top:0;
+      left:0;
+      margin:0;
+      padding:15px 0px 0px 0px;
+    }
+  }
+}
+.icon-button{
+    cursor: pointer;
+}
+.hidden_div{
+  display: none;
+}
+.overflow_lock{
+  width:100%;
+  height:100%;
+  position: fixed;
+  z-index: 1;
+  overflow:hidden;
+}
+.sidebar{
+  position: fixed;
+  width:100%;
+  height:100%;
+  z-index: 13;
+  background:rgba(#000,0.35);
+  overflow:hidden;
+}
+.sidebar_bg{
+  position: fixed;
+  width:100%;
+  height:100%;
+  z-index: 10;
+  overflow:hidden;
+}
+.sidebar_content{
+  position:fixed;
+  width:70% !important;
+  height:100%;
+  z-index: 11;
+  right:0;
+  box-sizing:border-box;
+  /*padding:20px;*/
+  background:#fff;
+  overflow-x:hidden;
+  overflow-y:scroll;
+  box-shadow:0px 5px 10px rgba(0,0,0,0.25);
+}
+.hbg_menu{
+  background:rgba(#fff,0);
+  color:#fff;
+  margin:0;
+  padding:4px 8px;
+  margin:4px 10px;
+  outline: 0;
+  border:0;
+  cursor: pointer;
+  font-size:20px;
+  right:0;
+  font-weight: bold;
+  position: fixed;
+  z-index: 11;
+}
+.hbg_menu:hover{
+  border:0;
+  outline:0;
+}
+.hbg_menu-active{
+  background:rgba(#fff,0);
+  color:#fff;
+  margin:0;
+  padding:4px 8px;
+  margin:4px 10px;
+  outline: 0;
+  border:0;
+  cursor: pointer;
+  font-size:20px;
+  right:0;
+  font-weight: bold;
+  position: absolute;
+  z-index: 15;
+}
+.hbg_menu-active:hover{
+  border:0;
+  outline:0;
+}
+.add_menu{
+  background:#d39aff;
+  border-radius: 100px;
+  width:60px;
+  height:60px;
+  color:#fff;
+  margin:0;
+  outline: 0;
+  border:0;
+  cursor: pointer;
+  font-size:16px;
+  right:30px;
+  bottom:30px;
+  font-weight: bold;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.25);
+  position: fixed;
+  z-index: 11;
+}
+.add_hiddenform{
+  display: none;
+  color:#252525;
+  box-sizing: border-box;
+  padding:15px;
+  width:100%;
+  height:100%;
+  position: fixed;
+  z-index:12;
+  overflow-y:scroll;
+}
+.add_hiddenform-active{
+  display: block;
+  color:#252525;
+  box-sizing: border-box;
+  padding:15px;
+  width:100%;
+  height:100%;
+  position: fixed;
+  z-index:12;
+  overflow-y:scroll;
+}
+label {
+  font-size:15px;
+}
+.form-control {
+  font-size:15px;
+}
+
+.group-header{
+  .list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: $base_color;
+    border-color: $base_color;
+  }
+  .list-group-item:first-child {
+      margin-bottom: 0;
+      border-bottom-right-radius: .25rem;
+      border-bottom-left-radius: .25rem;
+  }
+}
+/*base code*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+/*the animation definition*/
+@-webkit-keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    opacity: 0
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in
+  }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg)
+  }
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px)
+  }
+}
+@keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -ms-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    opacity: 0
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -ms-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in
+  }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    -ms-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    -ms-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg)
+  }
+  100% {
+    -webkit-transform: perspective(400px);
+    -ms-transform: perspective(400px);
+    transform: perspective(400px)
+  }
+}
+.flipInX {
+  -webkit-backface-visibility: visible!important;
+  -ms-backface-visibility: visible!important;
+  backface-visibility: visible!important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX
+}
+
+/*base code*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+/*the animation definition*/
+@-webkit-keyframes zoomOut {
+  0% {
+    opacity: 1
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3)
+  }
+  100% {
+    opacity: 0
+  }
+}
+@keyframes zoomOut {
+  0% {
+    opacity: 1
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    -ms-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3)
+  }
+  100% {
+    opacity: 0
+  }
+}
+.zoomOut {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut
+}
